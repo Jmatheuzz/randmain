@@ -15,6 +15,7 @@ export default function RandNum(){
         const unicos = document.querySelector('.numeros-unicos');
         const ordem = document.querySelector('#ordem');
         const resultado = document.querySelector('.resultado');
+        const resultadoContainer = document.querySelector('.resultado-container');
         setGerado(true);
         let aux = '';
         const randNum = new Numeros(minimo.value, maximo.value, qtdNUMEROS.value);
@@ -121,7 +122,7 @@ export default function RandNum(){
             }
         }
         
-        resultado.classList.add('resultado-on');
+        resultadoContainer.classList.add('resultado-on');
         setResultado(aux);
     }
     
